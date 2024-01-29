@@ -61,6 +61,9 @@ local command_tbl = {
   joinLines = function(_)
     require('rustaceanvim.commands.join_lines')()
   end,
+  memoryLayout = function(_)
+    require('rustaceanvim.commands.memory_layout')()
+  end,
   moveItem = function(args)
     if #args == 0 then
       vim.notify("moveItem: called without 'up' or 'down'", vim.log.levels.ERROR)
